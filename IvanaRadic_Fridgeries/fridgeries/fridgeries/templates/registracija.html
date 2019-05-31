@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+        <form class="box" action="registracija.html" method="post">
+            <h1>Fridgeries</h1>
+			
+            <input type ="text" name="ime" placeholder="Ime" required>
+
+            <input type ="text" name="prezime" placeholder="Prezime" required>
+		
+            <input type ="text" name="email" placeholder="E-mail" required>
+	
+            <input type ="password" name="lozinka" placeholder="Lozinka" required>
+         
+			<input type="submit" name="" value="Registriraj se">
+            <a href="/prijava" style="text-decoration: none;"><h4>Prijavite se</h4></a>
+         </form>
+		 <style>
+		body{
+		background-image: url("https://i.ibb.co/9czKqPg/hrana2.jpg");
+		}
+		</style>
+{% endblock %}
