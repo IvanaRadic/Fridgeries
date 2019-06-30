@@ -9,7 +9,7 @@ curr.execute("INSERT INTO Korisnik VALUES ('Pero', 'Peric', 'lozinka123', 'pero@
 curr.execute("INSERT INTO Korisnik VALUES ('Ivo', 'Ivic', 'pas12345', 'ivoiv@hotmail.com')")
 curr.execute("INSERT INTO Korisnik VALUES ('Marko', 'Maric', 'password142', 'markan@gmail.com')")
 
-#Upis trenutnih namirnica u hladnjaku#
+#Upis namirnica u hladnjak#
 curr.execute("INSERT INTO MojHladnjak VALUES ('Sok od narance', 'sokovi')")
 curr.execute("INSERT INTO Trenutno_u_Hladnjaku VALUES ('Coca Cola', 'sokovi')")
 curr.execute("INSERT INTO Trenutno_u_Hladnjaku VALUES ('Mlijeko', 'mlijecni_proizvodi')")
