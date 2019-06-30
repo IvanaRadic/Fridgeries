@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<link rel='stylesheet'type='text/css'href='{{ url_for("static", filename="css/st.css")}}'>
+	<link rel="icon" href="https://d1nw62gticy6e9.cloudfront.net/uploads/Urban-Farmer-Favicon-Tomato.jpg" type="image/x-icon"/>
+	<title>Fridgeries</title>
+</head>
+<body>
+<style>
+		body{
+		background-image: url("https://i.ibb.co/9czKqPg/hrana2.jpg");
+		}
+		</style>
+<nav>
+        <div class="logo">
+        <h4>Fridgeries</h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href='/naslovna'>Moj Hladnjak</a></li>
+            <li><a href="#" style="text-decoration: underline;">Dodaj Namirnicu</a></li>
+            <li><a href='/prijava'>Odjava</a></li>
+        </ul>
+       <!-- <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+		-->
+    </nav>
+
+	
+
+<!--<script src="navjs.js"></script> -->
+
+
+
+<form method='POST' class='boxunos'>
+<h1>Dodaj namirnicu</h1>
+<br>
+<input type ='text' name='imenamirnice' placeholder='Ime namirnice' required>
+		<select name="kategorija">
+		<option value="" disabled selected hidden >Odaberi kategoriju</option>
+		<option value="sokovi">Sokovi</option>
+		<option value="mlijecni_proizvodi">Mliječni proizvodi</option>
+		<option value="povrce">Povrće</option>
+		<option value="meso">Meso</option>
+	</select>
+            
+			
+			<br> <br><br> <br>
+			
+            <input type='submit' name='unos' value='Spremi'>
+        </form>
+</body>
+</html>
