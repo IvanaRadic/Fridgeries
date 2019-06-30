@@ -10,15 +10,11 @@ curr.execute("INSERT INTO Korisnik VALUES ('Ivo', 'Ivic', 'pas12345', 'ivoiv@hot
 curr.execute("INSERT INTO Korisnik VALUES ('Marko', 'Maric', 'password142', 'markan@gmail.com')")
 
 #Upis trenutnih namirnica u hladnjaku#
-curr.execute("INSERT INTO Trenutno_u_Hladnjaku VALUES ('Sok od narance', 'mlijeko', 'rajcica')")
-curr.execute("INSERT INTO Trenutno_u_Hladnjaku VALUES ('Coca Cola', 'sir', 'mrkva')")
-curr.execute("INSERT INTO Trenutno_u_Hladnjaku VALUES ('', '', 'Kiseli krastavci')")
-
-#Upis liste za kupovinu#
-curr.execute("INSERT INTO Lista_za_Kupovinu VALUES ('Fanta', 'jogurt', 'Kupus')")
-curr.execute("INSERT INTO Lista_za_Kupovinu VALUES ('Sprite', '', 'Zelena salata')")
-
-
+curr.execute("INSERT INTO MojHladnjak VALUES ('Sok od narance', 'sokovi')")
+curr.execute("INSERT INTO Trenutno_u_Hladnjaku VALUES ('Coca Cola', 'sokovi')")
+curr.execute("INSERT INTO Trenutno_u_Hladnjaku VALUES ('Mlijeko', 'mlijecni_proizvodi')")
+curr.execute("INSERT INTO Trenutno_u_Hladnjaku VALUES ('Sir', 'mlijecni_proizvodi')")
+curr.execute("INSERT INTO Trenutno_u_Hladnjaku VALUES ('Kupus', 'povrce')")
 
 conn.commit()
 conn.close()
