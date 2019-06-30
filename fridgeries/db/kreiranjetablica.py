@@ -1,4 +1,4 @@
- #Kreiranje tablica#
+  #Kreiranje tablica#
 
 import sqlite3
 
@@ -14,17 +14,11 @@ curr.execute("""CREATE TABLE Korisnik (
 		   PRIMARY KEY(Email_Korisnika)
 						)""")
 						
-#curr.execute("""CREATE TABLE Trenutno_u_Hladnjaku(
-			#	Sokovi TEXT,
-			#	Mlijecni_proizvodi TEXT,
-			#	Povrce TEXT
-			#				)""")
+curr.execute("""CREATE TABLE MojHladnjak(
+				imenamirnice TEXT NOT NULL
+				kategorija TEXT NOT NULL
+							)""")
 							
-#curr.execute("""CREATE TABLE Lista_za_Kupovinu(
-#				Sokovi TEXT,
-#				Mlijecni_proizvodi TEXT,
-#				Povrce TEXT
-#							)""")
 				
 
 conn.commit()
